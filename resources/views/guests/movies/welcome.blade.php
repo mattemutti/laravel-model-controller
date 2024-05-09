@@ -26,3 +26,8 @@
         </div>
     </div>
 @endsection
+
+
+@section('page-title')
+    Ciuppa
+@endsection
