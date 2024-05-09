@@ -21,3 +21,7 @@
         </div>
     </div>
 @endsection
+
+@section('page-title')
+    {{ $movies->title }}
+@endsection
