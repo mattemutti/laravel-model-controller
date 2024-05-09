@@ -14,7 +14,15 @@ class PageController extends Controller
         $movies = Movie::all(); //per recuperare tutti i dati dell atabella del database
         //dd($movies);
 
-        return view('guests.welcome', compact('movies'));
+        return view('guests.movies.welcome', compact('movies'));
+    }
+
+    public function show($id)
+    {
+        $movies = Movie::all()[$id];
+        //dd($movies);
+
+        return view('guests.movies.show', compact('movies'));
     }
     public function about()
     {
@@ -25,4 +33,6 @@ class PageController extends Controller
     {
         return view('guests.contacts');
     }
+
+
 }
