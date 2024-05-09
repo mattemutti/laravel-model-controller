@@ -11,11 +11,10 @@ class PageController extends Controller
 
     public function index()
     {
+        $movies = Movie::all(); //per recuperare tutti i dati dell atabella del database
+        //dd($movies);
 
-        $movies = Movie::all();
-        dd($movies);
-
-        return view('guests.welcome');
+        return view('guests.welcome', compact('movies'));
     }
     public function about()
     {
