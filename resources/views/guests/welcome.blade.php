@@ -2,9 +2,8 @@
 
 
 @section('content')
-    <h1>hello</h1>
-    <div class="container">
-        <div class="row">
+    <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
             @forelse ($movies as $index => $movie)
                 <div class="col">
                     <div class="card">
@@ -23,6 +22,5 @@
                 </div>
             @endforelse
         </div>
-    </div>
     </div>
 @endsection
