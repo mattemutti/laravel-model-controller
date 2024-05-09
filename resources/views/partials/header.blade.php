@@ -4,7 +4,7 @@
             <nav class="navbar navbar-expand-sm bg-dark">
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse " id="navbarID">
-                        <a class="navbar-brand {{ Route::currentRouteName() === 'guests.movies.home' ? 'text-primary' : 'text-white' }}"
+                        <a class="navbar-brand {{ Route::currentRouteName() === 'guests.movies.home' || 'guests.movies.show' ? 'text-primary' : 'text-white' }}"
                             href="{{ route('guests.movies.home') }}">Movies</a>
 
                         <div class="navbar-nav">
